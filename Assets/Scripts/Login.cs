@@ -72,6 +72,6 @@ public class Login : MonoBehaviour
         //print("Kirjautuminen onnistui");
         errorText.gameObject.SetActive(false);
         // Onnistuneen kirjatumisen jälkeen siirrytään pelialueelle.
-        SceneManager.LoadScene("Playground");
+        SceneManager.LoadScene(1);
     }
 }
