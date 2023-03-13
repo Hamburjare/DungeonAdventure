@@ -46,7 +46,7 @@ public class Login : MonoBehaviour
             using (var command = connection.CreateCommand())
             {
                 // SQL-lause, jolla haetaan pinkoodi
-                command.CommandText = $"select * from login where pincode = '{pincode.text}'";
+                command.CommandText = $"select * from Players where pincode = '{pincode.text}'";
                 // Suoritetaan haku
                 using (IDataReader reader = command.ExecuteReader())
                 {
